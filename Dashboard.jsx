@@ -20,16 +20,16 @@ export default function Dashboard({ user }) {
       >
         <div className="flex items-center space-x-3">
           <Cpu className="text-green-500" size={26} />
-          <h1 className="text-3xl font-extrabold tracking-widest text-green-400 drop-shadow-[0_0_10px_#00ff88]">
-  Basha Control — PRO Panel
-</h1>
+          
         </div>
         <div className="flex items-center space-x-4">
           <span className="text-sm opacity-80">👤 {user.email}</span>
           <button
             onClick={() => signOut(auth)}
             className="flex items-center gap-2 px-4 py-1 border border-green-700 hover:bg-green-800/30 transition-all rounded-lg"
-          >
+          <h1 className="text-3xl font-extrabold tracking-widest text-green-400 drop-shadow-[0_0_10px_#00ff88]">
+  Basha Control — PRO Panel
+</h1>
             <Power size={16} /> Logout
           </button>
         </div>
